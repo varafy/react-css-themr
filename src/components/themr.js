@@ -132,7 +132,7 @@ export default (componentName, localTheme, options = {}) => (ThemedComponent) =>
         : this.getThemeNotComposed(props)
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps) {
+    componentWillReceiveProps(nextProps) {
       if (
         nextProps.composeTheme !== this.props.composeTheme ||
         nextProps.theme !== this.props.theme ||
